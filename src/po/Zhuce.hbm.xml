@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-18 8:40:46 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="po.Zhuce" table="zhuce">
+        <id name="zphone" type="java.lang.String">
+            <column name="Zphone" />
+            <generator class="assigned" />
+        </id>
+        <property name="zxm" type="java.lang.String">
+            <column name="Zxm" />
+        </property>
+        <property name="zlou" type="java.lang.String">
+            <column name="Zlou" />
+        </property>
+        <property name="zsushe" type="java.lang.String">
+            <column name="Zsushe" />
+        </property>
+    </class>
+</hibernate-mapping>

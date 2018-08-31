@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-19 14:49:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="po.Xiadan" table="xiadan">
+        <id name="id" type="java.lang.String">
+            <column name="Id" />
+            <generator class="assigned" />
+        </id>
+        <property name="phone" type="java.lang.String">
+            <column name="Phone" />
+        </property>
+        <property name="kdlx" type="java.lang.String">
+            <column name="Kdlx" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="Date" />
+        </property>
+        <property name="xm" type="java.lang.String">
+            <column name="Xm" />
+        </property>
+        <property name="lou" type="java.lang.String">
+            <column name="Lou" />
+        </property>
+        <property name="sushe" type="java.lang.String">
+            <column name="Sushe" />
+        </property>
+        <property name="qhh" type="java.lang.String">
+            <column name="Qhh" />
+        </property>
+        <property name="beizhu" type="java.lang.String">
+            <column name="Beizhu" />
+        </property>
+    </class>
+</hibernate-mapping>

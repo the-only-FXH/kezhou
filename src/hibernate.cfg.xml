@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- 配置数据库基本信息 -->
+    	<!-- 如果没有使用spring，则如下配置中的前缀hibernate都可以省略 -->
+    	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<property name="hibernate.connection.username">root</property>
+    	<property name="hibernate.connection.password">root</property>
+    	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/kezhou2?useUnicode=true&amp;characterEncoding=utf-8</property>
+    	<!-- 如上的连接url可以省略默认的localhost:3306，配置如下 -->
+    	<property name="hibernate.connection.url">jdbc:mysql:///kezhou2?useUnicode=true&amp;characterEncoding=utf-8</property>
+    	
+    	<!-- 配置Hibernate的基本信息 -->
+    	<!-- Hibernate所使用的数据库方言 -->
+    	<!-- 取值可以查看\hibernate-release-5.2.3.Final\project\etc\hibernate.properties文件，找到## MySQL就能找到Hibernate使用的数据库方言 -->
+    	<!-- 如下方言给 MySQL 提供了具有事务(commit)、回滚(rollback)和崩溃修复能力、多版本并发控制的事务安全型表 -->
+    	<!-- mysql 5 版本中使用的数据库方言做了修改
+    	<property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+    	 -->
+    	<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+    	
+    	<!-- 执行操作时是否在控制台打印SQL语句 -->
+    	<property name="hibernate.show_sql">true</property>
+    	
+    	<!-- 是否对SQL进行格式化,设置为true，控制台显示的SQL语句会分行显示，便于阅读 -->
+    	<property name="hibernate.format_sql">true</property>
+    	
+    	<!-- 指定自动生成数据表的策略 -->
+    	<property name="hibernate.hbm2ddl.auto">update</property>
+    	
+    	<!-- 指定关联的.hbm.xml文件,注意以路径的形式给出文件路径，而不是包的形式 -->
+
+    	
+    	<mapping resource="po/Zhuce.hbm.xml"/>
+    	<mapping resource="po/Xiadan.hbm.xml"/>
+ 
+    	
+    </session-factory>
+</hibernate-configuration>

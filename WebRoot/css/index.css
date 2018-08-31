@@ -1,0 +1,80 @@
+﻿
+.login_wrap{
+	background: url(../img/logo_bg.jpg) no-repeat ;
+	background-size: 100% ;	
+	height:400px;
+	margin-top:0px;	
+}
+img{
+	width: 600px;
+	height: 200px;
+	margin-top:180px;
+	margin-left:27%;
+}
+.login_box{
+	width: 560px;
+	
+	margin: 0px auto;
+
+}
+.login_title{
+	font-size: 65px;
+	
+	color: #FF7F50;
+	padding: 15px 0;
+	width: 700px;
+	margin-left:5px;
+	border-bottom: solid 1px #CCCCCC;
+	
+}
+.pp{
+	font-size: 45px;
+	text-align: right;
+	color: #FF7F50;
+	padding: 15px 0;
+	width: 400px;
+	margin: 0 auto;
+	border-bottom: solid 1px #CCCCCC;
+	
+}
+
+
+.wenzi1{
+	
+
+	font-family: "微软雅黑";
+	font-size: 45px;
+	margin-left:20px;
+	margin-top:30px;
+	
+	
+	
+	
+}
+
+.wenzi2{
+	
+
+	font-family: "微软雅黑";
+	font-size: 35px;
+	margin-left:80px;
+	
+	
+	
+	
+	
+}
+.a1{
+	margin-left:15px;
+	
+	
+	
+}
+a { 
+text-decoration: none; 
+color: #FF7F50; 
+-webkit-tap-highlight-color: transparent;
+}
+
+  .focus {
+    border-bottom:3px solid #FF7F50; }

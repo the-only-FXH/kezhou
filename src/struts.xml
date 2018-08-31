@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- Zhuceaction配置-->
+	<package name="Zhuceaction" namespace="/Zhuce" extends="struts-default">
+		<action name="insert" class="action.Zhuceaction" method="insert">
+			<result name="s" >/Szhuce_insert.jsp</result>
+			<result name="f">/Fzhuce_insert.jsp</result>
+		</action>
+		
+		<action name="delete" class="action.Zhuceaction" method="delete">
+			<result name="s" type="chain">queryall</result>
+			<result name="f">/Error.jsp</result>
+		</action>
+		
+		<action name="update" class="action.Zhuceaction" method="update">
+			<result name="s">/Szhuce_update.jsp</result>
+			
+		</action>
+		
+		<action name="select" class="action.Zhuceaction" method="select">
+			<result name="s">/Szhuceselect.jsp</result>
+			<result name="f">/Error.jsp</result>
+		</action>
+		
+		
+		
+		<action name="queryall" class="action.Zhuceaction" method="QueryAll">
+			<result name="s">/Szhucequeryall.jsp</result>		
+		</action>
+	</package>
+	
+	
+	
+	<!-- Xiadanaction配置-->
+	<package name="Xiadanaction" namespace="/Xiadan" extends="struts-default">
+		<action name="insert" class="action.Xiadanaction" method="insert">
+			<result name="s" >/Sxiadan_insert.jsp</result>
+			<result name="f">/Fxiadan_insert.jsp</result>
+		</action>
+		
+		<action name="delete" class="action.Xiadanaction" method="delete">
+			<result name="s">/Sxiadan_delete.jsp</result>
+			<result name="f">/Fxiadan_delete.jsp</result>
+		</action>
+		
+		<action name="deleteById" class="action.Xiadanaction" method="deleteById">
+			<result name="s">/Sxiadan_delete.jsp</result>
+			<result name="f">/Fxiadan_delete.jsp</result>
+		</action>
+		
+		<action name="update" class="action.Xiadanaction" method="update">
+			<result name="s">/Szhuce_update.jsp</result>
+			
+		</action>
+		
+		<action name="select" class="action.Xiadanaction" method="select">
+			<result name="s">/Sxiadan_select.jsp</result>
+			<result name="f">/Fxiadan_select.jsp</result>
+		</action>
+		
+		<action name="selectByPhone" class="action.Xiadanaction" method="selectByPhone">
+			<result name="s">/Sxiadan_select.jsp</result>
+			<result name="f">/Fxiadan_select.jsp</result>
+		</action>
+				
+		<action name="queryall" class="action.Xiadanaction" method="QueryAll">
+			<result name="s">/Sxiadanqueryall.jsp</result>		
+		</action>
+		
+		<action name="selectbydate" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck2.jsp</result><!-- 查询当天 -->
+		</action>
+		<action name="selectbydate1" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck3.jsp</result><!-- 查询昨天 -->
+		</action>
+		<action name="selectbydate2" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck4.jsp</result><!-- 查询东区 -->
+		</action>
+		<action name="selectbydate3" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck5.jsp</result><!-- 查询西区 -->
+		</action>
+		<action name="selectbydate4" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck6.jsp</result><!-- 东门菜鸟 -->
+		</action>
+		<action name="selectbydate5" class="action.Xiadanaction" method="selectbydate">
+			<result name="s">/ck7.jsp</result><!-- 东门百世 -->
+		</action>
+	</package>
+
+</struts>
+ 
